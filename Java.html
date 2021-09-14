@@ -8,22 +8,35 @@
     <title>Document</title>
     <script src="week_14.js">
     </script>
+
 </head>
 
 <body>
     <h1>Java калькулятор</h1>
 
-    <p><input type="text" id="Number1">Введите первое число</p>
-    <p><input type="text" id="Number2">Введите второе число</p>
+    <!-- поле ввода первого числа -->
+    <p><input id="num1" />Введите первое число </p>
+    <p><input id="num2" />Введите второе число</p>
 
-    <p><input type="button" value="Сложение 2х чисел" onclick="clickMe()"></p>
+    <!-- блок с кнопками -->
+    <div id="operator_btns" onclick="">
+        <button id="plus" onclick="op='+'">+</button>
+        <button id="minus" onclick="op='-'">-</button>
+        <button id="times" onclick="op='*'">*</button>
+        <button id="divide" onclick="op='/'">/</button>
+        <p>Выберите действие</p>
+    </div>
+    <br>
 
 
+    <!-- кнопка для расчётов -->
+    <button onclick="func()">Посчитать</button>
 
-    <button onClick="multiplication()">Умножение 2х чисел</button>
-    <button onClick="subtraction()">Вычитание 2х чисел</button>
-    <button onClick="division()">Деление 2х чисел</button>
+    <p id="result"></p>
 
+</body>
+
+</html>
 
 </body>
 
