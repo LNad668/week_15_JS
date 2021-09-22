@@ -16,51 +16,55 @@
 </head>
 
 <body>
-    <div class="card">
-        <div class="card-body">
-            <form>
-                <div class="row">
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail">Адрес электронной почты / Email</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword">Пароль</label>
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                    </div>
+
+    <div class="card-body">
+        <form>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Адрес электронной почты / Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                 </div>
-                <div class="form-group">
-                    <label for="inputAddress">Адрес</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <div class="form-group col-md-6">
+                    <label for="inputPassword">Пароль</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Адрес</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Город</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="City">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputState">Состояние</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>активное</option>
+                        <option>не активное</option>
+                        <option>...</option>
+                    </select>
                 </div>
 
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputCity">Город</label>
-                        <input type="text" class="form-control" id="inputCity" placeholder="City">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputState">Состояние</label>
-                        <select id="inputState" class="form-control">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
-                    </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" id="inputChekc"> Проверить данные
+                    </label>
 
                 </div>
-                <div class="form-group">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inputChekc"> Проверить данные
-                        </label>
-                    </div>
-                </div>
-
+            </div>
+            <div class="text-center">
                 <div id="errorMessage"></div>
                 <button type="submit" class="btn btn-primary" onclick="check();">Вход</button>
-            </form>
-        </div>
+            </div>
+        </form>
     </div>
+
 
 
 

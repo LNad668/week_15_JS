@@ -8,11 +8,14 @@ function check()
     let state = document.getElementById("inputState");
 
     if (email.value == ''){
-        document.getElementById('errorMessage') .innerHTML += "Ваш электронный адрес не заполнен <br> "  
+        document.getElementById('errorMessage').innerHTML += "Ваш электронный адрес не заполнен <br> "  
     }
 
     if (password.value == ''){
         document.getElementById('errorMessage') .innerHTML += "Ваш пароль не заполнен <br>"  
+    }
+    if (password.value.length < 6){
+        document.getElementById('errorMessage') .innerHTML += "Пароль должен содержать не меньше 6 символов <br>"  
     }
 
     if (address.value == ''){
@@ -26,4 +29,10 @@ function check()
     if (state.value == ''){
         document.getElementById('errorMessage') .innerHTML += "Ваш статус не заполнен <br>"  
     }
-}
+
+
+    if (email.value != 0 && password.value != 0 && address.value != 0 && city.value != 0 && state.value != 0){
+    alert ("Добро пожаловать");}
+
+   }
+
