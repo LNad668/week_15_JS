@@ -11,6 +11,7 @@
             var num2 = Number(document.getElementById("num2").value);
 
             // смотрим, что было в переменной с действием, и действуем исходя из этого
+
             switch (op) {
                 case '+':
                     result = num1 + num2;
@@ -21,10 +22,14 @@
                 case '*':
                     result = num1 * num2;
                     break;
+
                 case '/':
                     result = num1 / num2;
                     break;
-            }
+
+                    default: result = "НА НОЛЬ ДЕЛИТЬ НЕЛЬЗЯ" ;
+                }
+            
 
             // отправляем результат на страницу
             document.getElementById("result").innerHTML = result;
