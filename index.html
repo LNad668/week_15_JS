@@ -10,11 +10,38 @@
 </head>
 
 <body>
-    <script>
-        let date = new Date();
-        let time = date.getHours();
+    <h1>Выберите цвет темы</h1>
 
-        (time < 10) ? alert("Доброе утро!"): alert("Добрый день!");
+    <select id="color" name="color" onclick="choice();">
+        <option disabled selected="selected">Выберите цвет</option>
+        <option value="red">Красный</option>
+        <option value="blue">Синий</option>
+        <option value="yellow">Желтый</option>
+        <option value="green">Зеленый</option>
+    </select>
+
+
+
+
+
+
+    <script>
+        function choice() {
+            switch (document.getElementById("color").value) {
+                case 'red':
+                    document.body.style.background = "red";
+                    break;
+                case 'blue':
+                    document.body.style.background = "blue";
+                    break;
+                case 'yellow':
+                    document.body.style.background = "yellow";
+                    break;
+                case 'green':
+                    document.body.style.background = "green";
+                    break;
+            }
+        }
     </script>
 </body>
 

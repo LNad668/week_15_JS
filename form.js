@@ -31,8 +31,9 @@ function check()
     }
 
 
-    if (email.value != 0 && password.value != 0 && address.value != 0 && city.value != 0 && state.value != 0){
-    alert ("Добро пожаловать");}
+    if (email.value != '' && password.value != '' && address.value != '' && city.value != '' && state.value != ''){
+    alert ("Добро пожаловать");
+    }
 
    }
 

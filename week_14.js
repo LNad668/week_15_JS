@@ -25,11 +25,12 @@
 
                 case '/':
                     result = num1 / num2;
-                    break;
-
-                    default: result = "НА НОЛЬ ДЕЛИТЬ НЕЛЬЗЯ" ;
+                    break;;
                 }
-            
+             
+                if (num2 ==0) {
+                    alert("НА НОЛЬ ДЕЛИТЬ НЕЛЬЗЯ");
+                }
 
             // отправляем результат на страницу
             document.getElementById("result").innerHTML = result;
