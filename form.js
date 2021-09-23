@@ -7,6 +7,8 @@ function check()
     let city = document.getElementById("inputCity");
     let state = document.getElementById("inputState");
 
+    document.getElementById('errorMessage') .innerHTML = "";
+
     if (email.value == ''){
         document.getElementById('errorMessage').innerHTML += "Ваш электронный адрес не заполнен <br> "  
     }
@@ -31,7 +33,8 @@ function check()
     }
 
 
-    if (email.value != '' && password.value != '' && address.value != '' && city.value != '' && state.value != ''){
+    if (email.value != '' && password.value != '' && address.value != '' && city.value != '' &&
+     state.value != '' && password.value.length < "6"){
     alert ("Добро пожаловать");
     }
 
