@@ -1,14 +1,14 @@
 
         // переменная, в которой хранится выбранное математическое действие
-        var op;
+        let op;
 
         // функция расчёта
         function func() {
             // переменная для результата
-            var result;
+            let result;
             // получаем первое и второе число
-            var num1 = Number(document.getElementById("num1").value);
-            var num2 = Number(document.getElementById("num2").value);
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
 
             // смотрим, что было в переменной с действием, и действуем исходя из этого
 
@@ -27,7 +27,7 @@
                     result = num1 / num2;
                     break;;
                 }
-             
+            
                 if (num2 ==0) {
                     alert("НА НОЛЬ ДЕЛИТЬ НЕЛЬЗЯ");
                 }

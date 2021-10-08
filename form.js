@@ -33,10 +33,11 @@ function check()
     }
 
 
-    if (email.value != '' && password.value != '' && address.value != '' && city.value != '' &&
-     state.value != '' && password.value.length < "6"){
+    if (email.value != '' && password.value != '' && password.value.length >= 6 && address.value != '' && city.value != '' &&
+    state.value != ''){
     alert ("Добро пожаловать");
     }
+}
 
-   }
+
 
